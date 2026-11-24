@@ -1,59 +1,73 @@
-# Fiveclock — Deteksi Status Parkir Mobil
+# Fiveclock — Deteksi Status Slot Parkir Mobil
 
-Saya gunakan repositori ini untuk mencatat perkembangan proyek fiveclock dan menyatukan pekerjaan anggota. Proyeknya menentukan status petak kosong atau terisi mobil dari citra statis PKLot UFPR04.
+Repositori tugas besar Pengolahan Citra Digital, kelas RA, topik 2. Saya gunakan halaman ini sebagai pegangan pengerjaan kelompok. Pembaruan terakhir: **25 November 2026**.
 
-## Progres mingguan
+Proyek menentukan status kosong atau terisi pada empat petak parkir mobil dari citra statis PKLot UFPR04. Evaluasi data asli sudah berjalan. Pemeriksaan anggota dan aplikasi demo masih dikerjakan.
 
-| Minggu | Fokus | Catatan |
+## Mulai dari sini
+
+| Keperluan | File yang dipakai |
+|---|---|
+| Melihat tugas anggota dan target minggu ini | [Progres Minggu 13](progres/minggu13/README.md) |
+| Menjalankan pengujian lewat Colab | [Notebook evaluasi utama](https://colab.research.google.com/github/Kaizenix/FIveclock/blob/main/Fiveclock_Evaluasi_25_November.ipynb) |
+| Mengubah metode atau menjalankan lewat Python | [parking.py](parking.py) |
+| Membaca hasil, ablasi, dan keterbatasan | [Laporan evaluasi 25 November](Laporan_Progres_25_November.md) |
+| Memeriksa sumber, pembagian, dan label data | [Panduan data](data/README.md) |
+| Mencari tabel nilai, prediksi, gambar, dan model | [Panduan hasil](results/README.md) |
+| Mengisi tab progres perkuliahan | [Teks isian Minggu 13](PROGRES_M13.txt) |
+
+**Untuk pengerjaan saat ini, gunakan notebook evaluasi di atas.** Notebook di folder Minggu 12 mencatat implementasi awal dengan data sintetis.
+
+## Menjalankan pengujian
+
+### Google Colab
+
+1. Buka tautan notebook evaluasi utama pada tabel.
+2. Sambungkan runtime Python dengan CPU.
+3. Pilih **Runtime → Run all**. Sel persiapan mengambil repositori beserta data jika belum tersedia.
+4. Tunggu enam skenario selesai. Tabel dan gambar hasil akan muncul di notebook; file hasil disimpan di folder `results` dalam runtime.
+
+Keluaran yang sudah terlihat di notebook berasal dari pengujian 25 November. Jalankan ulang untuk menghasilkan keluaran pada runtime sendiri. Jika muncul pesan OpenCV tidak memiliki `HOGDescriptor`, pasang `opencv-python-headless==4.11.0.86`, mulai ulang runtime, lalu jalankan kembali.
+
+### Komputer sendiri
+
+Gunakan Python 3.11 atau 3.12. Jalankan dari folder repositori:
+
+```bash
+python -m pip install -r requirements.txt
+python parking.py
+```
+
+Perintah tersebut menjalankan evaluasi dan menulis ulang hasil yang dihasilkan oleh `parking.py` dalam `results`. Untuk percobaan dengan folder keluaran terpisah:
+
+```bash
+python parking.py --output hasil_percobaan
+```
+
+## Pegangan tiap anggota
+
+| Anggota | Bagian yang dipegang | Mulai dari |
 |---|---|---|
-| 11 · 9–13 November | Perencanaan dan proposal | [Hasil, pembagian tugas, dan kendala](progres/minggu11/README.md) |
-| 12 · 16–20 November | Implementasi awal | [Hasil, pembagian tugas, dan kendala](progres/minggu12/README.md) |
-| 13 · 23–27 November | Evaluasi dan ablasi | [Pembaruan sampai 25 November](progres/minggu13/README.md) |
+| Ardan — Project Lead | Mengatur pekerjaan, menyatukan progres dan laporan, menyiapkan asistensi | Halaman ini dan [progres minggu ini](progres/minggu13/README.md) |
+| Cikal — Data Engineer & Annotator | Memeriksa data, label, acuan kosong, dan pembagian tanggal | [data/README.md](data/README.md) |
+| Govin — Computer Vision Engineer | Memeriksa implementasi dan kegagalan metode klasik | [parking.py](parking.py), [gambar tahapan](results/tahapan.png) |
+| Raisya — Evaluation & QA Analyst | Memeriksa metrik, ablasi, dan kasus gagal | [results/README.md](results/README.md), [laporan evaluasi](Laporan_Progres_25_November.md) |
+| Marvin — Application Engineer | Membuat aplikasi demo dari hasil prediksi | [parking.py](parking.py), [model SVM](results/hog_svm.joblib) |
 
-Pembagian di tiap halaman menjadi pegangan tanggung jawab anggota. Hasil yang sudah tersedia dicatat pada bagian hasil pekerjaan. Pemeriksaan atau pengembangan yang masih perlu dikerjakan dicatat pada tabel tugas dan rencana berikutnya.
+Rincian tugas dan target sampai 27 November ada di progres Minggu 13. Tabel ini menunjukkan penanggung jawab; pekerjaan yang selesai dicatat setelah hasilnya diperiksa. Aplikasi demo belum tersedia di repositori.
 
-## Hasil pengujian terakhir
+## Hasil terakhir
 
-Enam skenario sudah dijalankan pada 36 foto uji, dengan empat petak per foto. Pembahasan lengkap ada pada [laporan evaluasi](Laporan_Progres_25_November.md).
+Dari 36 foto uji diperoleh 144 observasi petak. Macro-F1 baseline **0,8579**, metode klasik lengkap **0,4696**, dan HOG + SVM **0,9569**. Target 0,85 untuk metode klasik lengkap belum tercapai. Enam skenario beserta kesalahannya dibahas di [laporan evaluasi](Laporan_Progres_25_November.md).
 
-| Metode | Macro-F1 |
-|---|---:|
-| Baseline selisih citra | 0,8579 |
-| Klasik lengkap | 0,4696 |
-| Tanpa normalisasi | 0,7941 |
-| Tanpa Canny | 0,6898 |
-| Tanpa morfologi | 0,4696 |
-| HOG + SVM linear | 0,9569 |
+## Urutan pengerjaan
 
-Target macro-F1 0,85 untuk metode klasik lengkap belum tercapai. Data uji memiliki 56 petak kosong dan 88 petak berisi mobil. HOG + SVM benar pada 138 dari 144 observasi.
+| Minggu | Fokus | Catatan pengerjaan |
+|---|---|---|
+| 11 · 9–13 November | Perencanaan dan proposal | [Progres Minggu 11](progres/minggu11/README.md) |
+| 12 · 16–20 November | Implementasi awal dengan data sintetis | [Progres Minggu 12](progres/minggu12/README.md) |
+| 13 · 23–27 November | Evaluasi data asli dan ablasi | [Progres Minggu 13](progres/minggu13/README.md) |
 
-## Menjalankan lokal
+Tahap berikutnya adalah aplikasi demo dan penyusunan laporan akhir, slide, serta video. Batas pengumpulan akhir: **6 Desember 2026, 23.59 WIB**.
 
-Disarankan Python 3.11 atau 3.12.
-
-    python -m pip install -r requirements.txt
-    python parking.py
-
-Semua hasil diekspor ke results, termasuk confusion matrix, tabel prediksi, metrik per kelas dan cuaca, serta model SVM.
-
-## File proyek
-
-- parking.py merupakan implementasi yang digunakan untuk menghasilkan hasil.
-- Fiveclock_Evaluasi_25_November.ipynb adalah notebook dengan keluaran evaluasi asli.
-- data/images memuat 64 foto sumber.
-- data/manifest.json memuat checksum, pembagian tanggal, label, dan poligon.
-- data/review_mobil.csv memuat hasil kurasi awal untuk diperiksa kembali oleh bagian data.
-- data/contact_0.jpg sampai contact_7.jpg memperlihatkan crop untuk peninjauan tim.
-- data/source.json mencatat sumber dan revisi mirror.
-- results memuat hasil keenam skenario dan model SVM.
-- PROGRES_M13.txt dapat disesuaikan untuk isian tab progres.
-
-## Protokol
-
-Kalibrasi, pengembangan, dan pengujian memakai tanggal berbeda. Pengembangan 24 foto dipakai untuk penalaan ambang dan pelatihan SVM. Tiga ablasi memakai parameter metode klasik lengkap. Label uji digunakan untuk menghitung metrik. Canny diimplementasikan melalui OpenCV 4.11, sementara fitur HOG menggunakan HOGDescriptor OpenCV.
-
-Foto bersumber dari PKLot melalui mirror Voxel51. Poligon dan status dikonversi dari format FiftyOne yang berasal dari XML. Data menyasar empat petak mobil. Model memprediksi okupansi petak pada kamera yang dikenal. Jenis kendaraan diperiksa secara visual pada tahap kurasi awal. Peninjauan ulang anggota dicatat pada progres Minggu 13.
-
-## Lisensi data
-
-Foto PKLot berlisensi CC BY 4.0. Rincian atribusi dan perubahan format tersedia pada ATTRIBUTION.md.
+Sumber dan lisensi foto dicatat pada [ATTRIBUTION.md](ATTRIBUTION.md).
