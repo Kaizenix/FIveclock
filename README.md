@@ -13,14 +13,6 @@ Evaluasi dan ablasi per 25 November 2026 pada PKLot UFPR04 asli. Keenam skenario
 
 Target macro-F1 0,85 untuk metode klasik lengkap belum tercapai. Data uji memiliki 56 petak kosong dan 88 petak berisi mobil. HOG + SVM benar pada 138 dari 144 observasi.
 
-## Menjalankan di Colab
-
-1. Ekstrak ZIP paket di komputer.
-2. Buka Fiveclock_Evaluasi_25_November.ipynb melalui menu File → Upload notebook di Colab.
-3. Pilih runtime CPU dan jalankan semua sel.
-4. Saat diminta file, unggah ZIP paket Fiveclock_Evaluasi_25_November.zip.
-5. Hasil baru disimpan di folder results. Output notebook yang sudah tersimpan juga dapat diperiksa sebelum menjalankan ulang.
-
 ## Menjalankan lokal
 
 Disarankan Python 3.11 atau 3.12.
@@ -47,10 +39,6 @@ Semua hasil diekspor ke results, termasuk confusion matrix, tabel prediksi, metr
 Kalibrasi, pengembangan, dan pengujian memakai tanggal berbeda. Pengembangan 24 foto dipakai untuk penalaan ambang dan pelatihan SVM. Tiga ablasi memakai parameter metode klasik lengkap. Label uji digunakan untuk menghitung metrik. Canny diimplementasikan melalui OpenCV 4.11, sementara fitur HOG menggunakan HOGDescriptor OpenCV.
 
 Foto bersumber dari PKLot melalui mirror Voxel51. Poligon dan status dikonversi dari format FiftyOne yang berasal dari XML. Data menyasar empat petak mobil. Model memprediksi okupansi petak pada kamera yang dikenal. Pemeriksaan jenis kendaraan dalam paket dilakukan secara visual oleh asisten AI.
-
-## GitHub dan kelanjutan
-
-Folder ini siap disalin ke repositori kelompok. Sertakan atribusi dataset. Unggahan GitHub, verifikasi asistensi, aplikasi demo akhir, laporan akhir, slide, dan video perlu diselesaikan pada tahap masing-masing. Prediksi pada test yang telah dilihat harus dicatat jika dipakai sebagai dasar perubahan metode berikutnya.
 
 ## Lisensi data
 
