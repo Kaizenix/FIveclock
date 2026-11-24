@@ -1,0 +1,9 @@
+{
+  "official": "https://web.inf.ufpr.br/vri/databases/parking-lot-database/",
+  "paper": "https://doi.org/10.1016/j.eswa.2015.02.009",
+  "mirror": "https://huggingface.co/datasets/Voxel51/PKLot",
+  "revision": "17654327c54c4b6e551606ffa99a8999fea9f42b",
+  "license": "CC BY 4.0",
+  "image_content": "Foto PKLot asli; polygon dan okupansi dikonversi dari format FiftyOne yang berasal dari XML.",
+  "verification": "Pemeriksaan visual oleh asisten AI pada contact_0.jpg sampai contact_7.jpg."
+}

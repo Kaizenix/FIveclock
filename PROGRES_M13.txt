@@ -1,0 +1,8 @@
+Selesai
+Implementasi dan evaluasi enam skenario pada PKLot UFPR04 asli. Kalibrasi memakai 4 foto acuan, pengembangan 24 foto, pengujian 36 foto dari tanggal terpisah. Hasil HOG + SVM macro-F1 0,9569, baseline 0,8579, dan metode klasik lengkap 0,4696. CSV hasil, confusion matrix, tiga ablasi, dan enam kasus gagal SVM tersedia.
+
+Rencana berikutnya
+Periksa ulang kurasi bersama tim, bahas penurunan kinerja normalisasi dan OR saat asistensi, lalu susun aplikasi demo serta bab hasil. Jika dilakukan perbaikan metode, gunakan protokol evaluasi lanjutan yang dicatat secara jelas.
+
+Kendala
+Normalisasi P5–P95 dan tepi tambahan menyebabkan banyak petak kosong terbaca terisi. Target metode klasik lengkap belum tercapai. Sampel terbatas pada empat petak dari satu kamera. Unggahan repositori dan verifikasi asistensi perlu dilakukan oleh kelompok.
