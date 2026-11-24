@@ -11,10 +11,9 @@ Proyek menentukan status kosong atau terisi pada empat petak parkir mobil dari c
 | Melihat tugas anggota dan target minggu ini | [Progres Minggu 13](progres/minggu13/README.md) |
 | Menjalankan pengujian lewat Colab | [Notebook evaluasi utama](https://colab.research.google.com/github/Kaizenix/FIveclock/blob/main/Fiveclock_Evaluasi_25_November.ipynb) |
 | Mengubah metode atau menjalankan lewat Python | [parking.py](parking.py) |
-| Membaca hasil, ablasi, dan keterbatasan | [Laporan evaluasi 25 November](Laporan_Progres_25_November.md) |
+| Membaca hasil, ablasi, dan keterbatasan | [Laporan evaluasi 25 November](progres/minggu13/laporan_evaluasi.md) |
 | Memeriksa sumber, pembagian, dan label data | [Panduan data](data/README.md) |
 | Mencari tabel nilai, prediksi, gambar, dan model | [Panduan hasil](results/README.md) |
-| Mengisi tab progres perkuliahan | [Teks isian Minggu 13](PROGRES_M13.txt) |
 
 **Untuk pengerjaan saat ini, gunakan notebook evaluasi di atas.** Notebook di folder Minggu 12 mencatat implementasi awal dengan data sintetis.
 
@@ -51,14 +50,14 @@ python parking.py --output hasil_percobaan
 | Ardan — Project Lead | Mengatur pekerjaan, menyatukan progres dan laporan, menyiapkan asistensi | Halaman ini dan [progres minggu ini](progres/minggu13/README.md) |
 | Cikal — Data Engineer & Annotator | Memeriksa data, label, acuan kosong, dan pembagian tanggal | [data/README.md](data/README.md) |
 | Govin — Computer Vision Engineer | Memeriksa implementasi dan kegagalan metode klasik | [parking.py](parking.py), [gambar tahapan](results/tahapan.png) |
-| Raisya — Evaluation & QA Analyst | Memeriksa metrik, ablasi, dan kasus gagal | [results/README.md](results/README.md), [laporan evaluasi](Laporan_Progres_25_November.md) |
+| Raisya — Evaluation & QA Analyst | Memeriksa metrik, ablasi, dan kasus gagal | [results/README.md](results/README.md), [laporan evaluasi](progres/minggu13/laporan_evaluasi.md) |
 | Marvin — Application Engineer | Membuat aplikasi demo dari hasil prediksi | [parking.py](parking.py), [model SVM](results/hog_svm.joblib) |
 
 Rincian tugas dan target sampai 27 November ada di progres Minggu 13. Tabel ini menunjukkan penanggung jawab; pekerjaan yang selesai dicatat setelah hasilnya diperiksa. Aplikasi demo belum tersedia di repositori.
 
 ## Hasil terakhir
 
-Dari 36 foto uji diperoleh 144 observasi petak. Macro-F1 baseline **0,8579**, metode klasik lengkap **0,4696**, dan HOG + SVM **0,9569**. Target 0,85 untuk metode klasik lengkap belum tercapai. Enam skenario beserta kesalahannya dibahas di [laporan evaluasi](Laporan_Progres_25_November.md).
+Dari 36 foto uji diperoleh 144 observasi petak. Macro-F1 baseline **0,8579**, metode klasik lengkap **0,4696**, dan HOG + SVM **0,9569**. Target 0,85 untuk metode klasik lengkap belum tercapai. Enam skenario beserta kesalahannya dibahas di [laporan evaluasi](progres/minggu13/laporan_evaluasi.md).
 
 ## Urutan pengerjaan
 
@@ -70,4 +69,4 @@ Dari 36 foto uji diperoleh 144 observasi petak. Macro-F1 baseline **0,8579**, me
 
 Tahap berikutnya adalah aplikasi demo dan penyusunan laporan akhir, slide, serta video. Batas pengumpulan akhir: **6 Desember 2026, 23.59 WIB**.
 
-Sumber dan lisensi foto dicatat pada [ATTRIBUTION.md](ATTRIBUTION.md).
+Sumber dan lisensi foto dicatat pada [panduan data](data/README.md#sumber-dan-lisensi).

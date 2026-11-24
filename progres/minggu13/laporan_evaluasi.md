@@ -2,9 +2,9 @@
 
 Saya rangkum pengujian data asli sampai 25 November sebagai bahan evaluasi kelompok dan asistensi. Laporan ini memuat hasil enam skenario serta bagian yang masih perlu diperiksa sebelum laporan akhir disusun.
 
-[Halaman utama](README.md) · [Tugas anggota minggu ini](progres/minggu13/README.md) · [Notebook evaluasi](Fiveclock_Evaluasi_25_November.ipynb)
+[Halaman utama](../../README.md) · [Tugas anggota minggu ini](README.md) · [Notebook evaluasi](../../Fiveclock_Evaluasi_25_November.ipynb)
 
-Angka pada laporan mengacu pada [results/metrik.csv](results/metrik.csv). Penjelasan file data ada di [data/README.md](data/README.md), sedangkan daftar keluaran ada di [results/README.md](results/README.md).
+Angka pada laporan mengacu pada [results/metrik.csv](../../results/metrik.csv). Penjelasan file data ada di [data/README.md](../../data/README.md), sedangkan daftar keluaran ada di [results/README.md](../../results/README.md).
 
 ## Data dan protokol
 
@@ -58,11 +58,11 @@ Evaluasi memakai empat petak dari satu kamera dan hanya tiga tanggal uji. Foto y
 
 Implementasi, pelatihan SVM, baseline, tiga ablasi, evaluasi 144 observasi data asli, ekspor CSV, dan visualisasi telah dijalankan. Kurasi awal jenis kendaraan dilakukan oleh asisten AI dan tercatat pada data/review_mobil.csv. Pemeriksaan ulang oleh Cikal masih menjadi tugas minggu ini melalui contact sheet dan foto sumber.
 
-Kode dan hasil evaluasi sudah tersedia di repositori kelompok. Pembagian pekerjaan lanjutan tiap anggota dicatat pada [progres Minggu 13](progres/minggu13/README.md). Aplikasi demo akhir, laporan akhir, slide, dan video termasuk pekerjaan tahap berikutnya. Pemenuhan target metode klasik lengkap masih memerlukan pengembangan. Jika metode diperbaiki, evaluasi berikutnya memerlukan pemisahan pengujian baru atau pelabelan jelas sebagai iterasi setelah melihat hasil uji.
+Kode dan hasil evaluasi sudah tersedia di repositori kelompok. Pembagian pekerjaan lanjutan tiap anggota dicatat pada [progres Minggu 13](README.md). Aplikasi demo akhir, laporan akhir, slide, dan video termasuk pekerjaan tahap berikutnya. Pemenuhan target metode klasik lengkap masih memerlukan pengembangan. Jika metode diperbaiki, evaluasi berikutnya memerlukan pemisahan pengujian baru atau pelabelan jelas sebagai iterasi setelah melihat hasil uji.
 
 ## Langkah berikutnya
 
-Saya lanjutkan koordinasi melalui [progres Minggu 13](progres/minggu13/README.md). Cikal memeriksa data, Govin menelusuri mask yang bermasalah, Raisya mencocokkan metrik dan membahas kasus gagal, sedangkan Marvin menyiapkan aplikasi demo. Hasil pemeriksaan dicatat sebelum bagian laporan akhir diperbarui.
+Saya lanjutkan koordinasi melalui [progres Minggu 13](README.md). Cikal memeriksa data, Govin menelusuri mask yang bermasalah, Raisya mencocokkan metrik dan membahas kasus gagal, sedangkan Marvin menyiapkan aplikasi demo. Hasil pemeriksaan dicatat sebelum bagian laporan akhir diperbarui.
 
 ## Sumber
 

@@ -24,7 +24,7 @@ Hasil pengujian awal sudah tersedia. Bagian berikut menjadi tanggung jawab pemer
 
 | Anggota | Pekerjaan | File yang dibuka | Target hasil |
 |---|---|---|---|
-| Ardan | Menyatukan progres, menyesuaikan proposal dengan implementasi, dan menyiapkan bahan asistensi | README.md, PROGRES_M13.txt, dan proposal | Catatan progres yang konsisten dan daftar kendala |
+| Ardan | Menyatukan progres, menyesuaikan proposal dengan implementasi, dan menyiapkan bahan asistensi | README.md, laporan_evaluasi.md, dan proposal | Catatan progres yang konsisten dan daftar kendala |
 | Cikal | Memeriksa ulang kurasi serta pembagian data | data/contact_0.jpg sampai contact_7.jpg, data/review_mobil.csv, dan data/manifest.json | Catatan koreksi label atau konfirmasi data |
 | Govin | Menelusuri penyebab salah deteksi pada metode lengkap | parking.py dan results/tahapan.png | Contoh mask bermasalah beserta penjelasannya |
 | Raisya | Memeriksa skor dan membahas hasil ablasi | results/metrik.csv, results/prediksi_uji.csv, dan results/confusion_matrix.png | Draf analisis hasil dan kasus gagal |
@@ -40,5 +40,5 @@ Kurasi awal sudah tersedia. Pemeriksaan ulang anggota terhadap data dan hasil ma
 
 Setelah pemeriksaan hasil selesai, pekerjaan diteruskan ke aplikasi demo, penyusunan bab hasil, slide, dan video. Jika metode diubah setelah hasil uji ini dilihat, percobaan berikutnya perlu dicatat sebagai iterasi baru.
 
-[Laporan evaluasi lengkap](../../Laporan_Progres_25_November.md)  
+[Laporan evaluasi lengkap](laporan_evaluasi.md)  
 [Notebook evaluasi](../../Fiveclock_Evaluasi_25_November.ipynb)

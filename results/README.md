@@ -27,7 +27,7 @@ Tabel per cuaca dibaca dengan jumlah sampelnya. Kondisi hujan hanya memiliki tig
 
 ## Pemeriksaan dan percobaan berikutnya
 
-Raisya mencocokkan jumlah kesalahan di tabel prediksi dengan metrik dan confusion matrix, lalu menulis pembahasan pada [laporan evaluasi](../Laporan_Progres_25_November.md). Govin memakai gambar tahapan untuk menelusuri kegagalan metode klasik. Tugas terperinci ada di [progres Minggu 13](../progres/minggu13/README.md).
+Raisya mencocokkan jumlah kesalahan di tabel prediksi dengan metrik dan confusion matrix, lalu menulis pembahasan pada [laporan evaluasi](../progres/minggu13/laporan_evaluasi.md). Govin memakai gambar tahapan untuk menelusuri kegagalan metode klasik. Tugas terperinci ada di [progres Minggu 13](../progres/minggu13/README.md).
 
 `parking.py` menghasilkan tabel metrik, prediksi, parameter, model SVM, confusion matrix, contoh prediksi, dan gambar tahapan. Gambar `kasus_gagal_svm.png` merupakan visualisasi tambahan yang sudah disiapkan; gambar ini tidak dibuat ulang oleh perintah tersebut.
 
