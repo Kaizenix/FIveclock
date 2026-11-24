@@ -43,3 +43,9 @@ Foto bersumber dari PKLot melalui mirror Voxel51. Poligon dan status dikonversi 
 ## Lisensi data
 
 Foto PKLot berlisensi CC BY 4.0. Rincian atribusi dan perubahan format tersedia pada ATTRIBUTION.md.
+
+
+## Arsip progres mingguan
+
+- [Minggu 12, 16–20 November — implementasi awal dan uji sintetis](progres/minggu12/README.md)
+- [Minggu 13, 25 November — evaluasi PKLot asli dan ablasi](Laporan_Progres_25_November.md)
