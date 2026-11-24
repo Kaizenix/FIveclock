@@ -1,19 +1,33 @@
-# Progres Minggu 12, 16–20 November 2026
+# Progres Minggu 12
+16–20 November 2026
 
-Catatan ini ditambahkan setelah evaluasi Minggu 13 tersedia. Periode pada judul menunjukkan tahap pekerjaan yang didokumentasikan. Waktu commit mengikuti waktu unggahan sebenarnya.
+Fokus minggu ini adalah membuat alur program berjalan dari foto sampai keluar status petak. Saya catat hasil implementasinya lewat notebook dan contoh mask tiap tahap.
 
-## Pekerjaan yang tersedia pada Minggu 12
+## Hasil pekerjaan
 
-Implementasi awal membaca pasangan foto dan XML, menetapkan poligon petak, memakai acuan kosong per petak, dan menjalankan normalisasi P5–P95, selisih intensitas, Canny, penggabungan OR, serta opening dan closing. Keluaran mencakup mask setiap tahap, status petak, PNG, dan CSV.
+Program awal sudah bisa membaca foto dan XML, menetapkan poligon petak, serta memakai acuan kosong untuk setiap petak. Tahap yang sudah terhubung meliputi grayscale, normalisasi P5–P95, selisih intensitas, Canny, penggabungan OR, dan opening serta closing.
 
-Uji saat itu menggunakan data sintetis untuk memeriksa jalannya program. Dalam contoh tersimpan, dua petak kosong salah diprediksi terisi mobil oleh metode lengkap. Temuan ini menjadi bahan evaluasi normalisasi dan penggabungan mask. Angka tersebut berasal dari contoh sintetis.
+Keluaran program berupa mask setiap tahap, prediksi status petak, jumlah petak kosong, dan file PNG serta CSV.
 
-Notebook arsip terdapat pada [Fiveclock_Implementasi_M12_Colab.ipynb](Fiveclock_Implementasi_M12_Colab.ipynb). Grafik dapat dihasilkan kembali dengan menjalankan notebook di Colab. Output teks demo disertakan.
+Pengujian awal masih menggunakan gambar sintetis. Pada contoh yang dijalankan, metode lengkap salah membaca dua petak kosong sebagai terisi mobil. Area perubahan terlihat melebar setelah normalisasi. Temuan ini perlu diperiksa lagi saat data asli sudah dipakai.
 
-## Bagian yang baru dituntaskan pada Minggu 13
+## Pembagian tugas
 
-Pengambilan subset PKLot asli, pemeriksaan visual petak mobil, pelatihan HOG + SVM, dan evaluasi enam skenario pada 144 observasi dituntaskan pada 25 November 2026. Hasilnya tercatat dalam [laporan evaluasi](../../Laporan_Progres_25_November.md).
+| Anggota | Bagian yang dipegang | File dan target hasil |
+|---|---|---|
+| Ardan | Memantau kesiapan alur dan mencatat kendala untuk asistensi | Catatan progres dan daftar masalah |
+| Cikal | Menyiapkan pasangan foto dan XML serta memeriksa acuan kosong | Daftar foto, ID petak, dan label yang dipakai |
+| Govin | Memeriksa pembacaan data dan menghubungkan tahap pengolahan | Notebook dengan mask setiap tahap dan status petak |
+| Raisya | Mencocokkan prediksi dengan label contoh | Catatan petak yang benar dan salah terbaca |
+| Marvin | Menyiapkan penyajian hasil untuk demo | Tampilan poligon berwarna dan jumlah petak kosong |
 
-## Kontribusi dan asistensi
+## Kendala
 
-Kode awal dan uji sintetis dalam arsip ini disiapkan oleh asisten AI. Setiap anggota mencatat pemeriksaan, perubahan kode, analisis, atau integrasi yang benar-benar dikerjakannya. Status asistensi dan pengumpulan Minggu 12 perlu dikonfirmasi melalui tab Progres kelas.
+Contoh sintetis sudah bisa diproses, tetapi hasil PKLot asli masih perlu divalidasi. Penalaan ambang juga harus memakai data pengembangan.
+
+## Lanjutan
+
+Minggu berikutnya difokuskan pada pemilihan foto asli, verifikasi petak mobil, pelatihan SVM sebagai pembanding, dan evaluasi seluruh skenario.
+
+[Notebook implementasi](Fiveclock_Implementasi_M12_Colab.ipynb)  
+[Progres Minggu 13](../minggu13/README.md)

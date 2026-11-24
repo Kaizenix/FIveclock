@@ -54,7 +54,7 @@ Evaluasi memakai empat petak dari satu kamera dan hanya tiga tanggal uji. Foto y
 
 Implementasi, pelatihan SVM, baseline, tiga ablasi, evaluasi 144 observasi data asli, ekspor CSV, dan visualisasi telah dijalankan. Pemeriksaan jenis kendaraan dalam paket merupakan pemeriksaan asisten AI. Tim dapat memeriksanya kembali melalui contact sheet yang disertakan.
 
-Paket siap disalin ke repositori GitHub kelompok. Unggahan GitHub belum dilakukan. Aplikasi demo akhir, laporan akhir, slide, dan video termasuk pekerjaan tahap berikutnya. Pemenuhan target metode klasik lengkap masih memerlukan pengembangan. Jika metode diperbaiki, evaluasi berikutnya memerlukan pemisahan pengujian baru atau pelabelan jelas sebagai iterasi setelah melihat hasil uji.
+Kode dan hasil evaluasi sudah tersedia di repositori kelompok. Pembagian pekerjaan lanjutan tiap anggota dicatat pada [progres Minggu 13](progres/minggu13/README.md). Aplikasi demo akhir, laporan akhir, slide, dan video termasuk pekerjaan tahap berikutnya. Pemenuhan target metode klasik lengkap masih memerlukan pengembangan. Jika metode diperbaiki, evaluasi berikutnya memerlukan pemisahan pengujian baru atau pelabelan jelas sebagai iterasi setelah melihat hasil uji.
 
 ## Sumber
 

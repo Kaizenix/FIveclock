@@ -1,26 +1,32 @@
-# Progres Minggu 11, 9–13 November 2026
+# Progres Minggu 11
+9–13 November 2026
 
-Catatan ini ditambahkan setelah evaluasi Minggu 13 tersedia. Periode pada judul merujuk tahap pekerjaan. Waktu commit mengikuti waktu unggahan sebenarnya.
+Saya pakai minggu ini untuk merapikan arah proyek dan isi proposal. Fokusnya mendeteksi status petak parkir mobil dari foto kamera tetap. Data yang dipakai adalah PKLot, khususnya UFPR04.
 
-## Pekerjaan pada tahap proposal
+## Hasil pekerjaan
 
-- Membahas beberapa calon topik dan memilih deteksi status slot parkir mobil dari citra statis, topik 2.
-- Menyiapkan draf proposal, rumusan masalah, tujuan, dan rencana kerja.
-- Menetapkan PKLot UFPR04 sebagai sumber data sekunder.
-- Merancang baseline selisih grayscale terhadap acuan petak kosong.
-- Merancang normalisasi pencahayaan, deteksi tepi, penggabungan mask, dan morfologi sebagai metode lengkap.
-- Merencanakan 24 foto pengembangan, 36 foto uji, pemisahan tanggal, macro-F1, confusion matrix, dan tiga ablasi.
+Draf proposal sudah memuat latar belakang, rumusan masalah, tujuan, penelitian terkait, dan rencana percobaan. Baseline yang disiapkan memakai selisih grayscale terhadap foto acuan saat petak kosong. Metode lengkap menambahkan normalisasi pencahayaan, deteksi tepi, dan morfologi.
 
-## Status yang perlu dicatat
+Rencana datanya 24 foto pengembangan dan 36 foto uji. Pembagian tanggal dibuat terpisah supaya foto uji berasal dari hari yang berbeda dengan data pengembangan. Penilaian memakai macro-F1, confusion matrix, dan tiga ablasi.
 
-Pada tahap ini, pengujian PKLot asli belum terlaksana. Implementasi awal pada data sintetis terdokumentasi dalam [arsip Minggu 12](../minggu12/README.md). Evaluasi data asli diselesaikan pada 25 November dan tercatat dalam [laporan Minggu 13](../../Laporan_Progres_25_November.md).
+## Pembagian tugas
 
-Draf mengalami revisi setelah periode Minggu 11. Rincian pada catatan ini merekam proses perencanaan yang tersedia dalam percakapan. Berkas proposal yang dikirim pada 16 November merupakan versi lanjutan. Keberadaan draf tersebut tidak membuktikan waktu pengumpulan proposal atau status persetujuan dosen.
+Tabel ini menjadi pegangan tanggung jawab tiap anggota pada tahap proposal.
 
-## Bukti dan kontribusi
+| Anggota | Bagian yang dipegang | Target hasil |
+|---|---|---|
+| Ardan | Menyatukan isi proposal, menjaga ruang lingkup, dan menyusun jadwal | Draf proposal dan pembagian kerja |
+| Cikal | Mempelajari struktur PKLot, anotasi petak, dan sumber data | Rencana pemilihan foto dan penjelasan label |
+| Govin | Merancang baseline dan urutan pengolahan citra | Diagram alir serta alasan pemilihan metode |
+| Raisya | Menentukan ukuran keberhasilan dan skenario pengujian | Metrik, target, serta rencana ablasi |
+| Marvin | Menentukan masukan dan keluaran aplikasi | Rancangan tampilan foto, status petak, dan jumlah kosong |
 
-Dokumen proposal lengkap dikelola terpisah oleh kelompok. Catatan ini belum menyertakan PDF proposal. Kontribusi anggota dan waktu pengumpulan perlu disesuaikan dengan pekerjaan aktual, catatan tab Progres, dan bukti pengumpulan kelas.
+## Kendala
 
-## Hubungan dengan jadwal
+Pada tahap ini pengujian PKLot asli belum berjalan. Data dan baseline awal masih perlu disiapkan sebelum rancangan metode bisa diperiksa lewat hasil program.
 
-Tahap Minggu 11 menjadwalkan proposal, pengumpulan data, dan baseline awal. Penyusunan proposal sudah dilakukan. Pengerjaan data asli dan validasi baseline berlanjut ke Minggu 13. Cantumkan ketertinggalan tersebut saat melaporkan progres.
+## Lanjutan
+
+Berikutnya saya fokuskan pekerjaan ke implementasi awal. Targetnya membaca foto dan anotasi, memilih petak, lalu menampilkan hasil dari setiap tahap pengolahan.
+
+[Progres Minggu 12](../minggu12/README.md)
