@@ -61,11 +61,14 @@ Dari 36 foto uji diperoleh 144 observasi petak. Macro-F1 baseline **0,8579**, me
 
 ## Urutan pengerjaan
 
-| Minggu | Fokus | Catatan pengerjaan |
+| Minggu | Hasil yang ditunjukkan | Bukti dan status |
 |---|---|---|
-| 11 · 9–13 November | Perencanaan dan proposal | [Progres Minggu 11](progres/minggu11/README.md) |
-| 12 · 16–20 November | Implementasi awal dengan data sintetis | [Progres Minggu 12](progres/minggu12/README.md) |
-| 13 · 23–27 November | Evaluasi data asli dan ablasi | [Progres Minggu 13](progres/minggu13/README.md) |
+| 11 · 9–13 November | Rancangan awal dan pembagian tugas; file proposal belum tersedia di repositori | [Hasil Minggu 11](progres/minggu11/README.md#bukti-hasil-minggu-ini) |
+| 12 · 16–20 November | Notebook implementasi dan keluaran prediksi sintetis | [Hasil Minggu 12](progres/minggu12/README.md#bukti-hasil-minggu-ini) |
+| 13 · 23–27 November | Data asli, metrik, confusion matrix, model, dan pembahasan evaluasi | [Hasil Minggu 13](progres/minggu13/README.md#bukti-hasil-minggu-ini) |
+| 14 · 30 November–4 Desember | Target aplikasi demo, laporan akhir, slide, dan video | [Rencana Minggu 14](progres/minggu14/README.md) — belum selesai |
+
+Setiap minggu saya catat hasil yang bisa diperiksa beserta tautan filenya. Tugas anggota dicatat sebagai selesai setelah hasilnya tersedia dan diperiksa. File yang sama cukup ditautkan dari halaman progres terkait.
 
 Tahap berikutnya adalah aplikasi demo dan penyusunan laporan akhir, slide, serta video. Batas pengumpulan akhir: **6 Desember 2026, 23.59 WIB**.
 

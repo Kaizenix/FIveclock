@@ -18,6 +18,29 @@ Data yang tersedia berjumlah 64 foto dari kamera UFPR04. Empat foto digunakan se
 
 SVM menghasilkan 138 prediksi benar dari 144 observasi. Enam petak yang berisi mobil terbaca kosong. Metode klasik lengkap masih salah membaca 51 petak kosong sebagai terisi. Target macro-F1 0,85 untuk metode klasik lengkap belum tercapai.
 
+## Bukti hasil minggu ini
+
+| Hasil | File yang diperiksa | Status per 25 November |
+|---|---|---|
+| Data asli, label, dan pembagian tanggal | [Manifest](../../data/manifest.json), [panduan data](../../data/README.md) | Tersedia; pemeriksaan ulang anggota masih perlu dicatat |
+| Kode enam skenario | [parking.py](../../parking.py), [notebook evaluasi](../../Fiveclock_Evaluasi_25_November.ipynb) | Sudah dijalankan |
+| Perbandingan nilai enam skenario | [metrik.csv](../../results/metrik.csv) | Tersedia |
+| Prediksi tiap foto dan petak | [prediksi_uji.csv](../../results/prediksi_uji.csv) | Tersedia, 144 observasi uji |
+| Metrik per kelas dan cuaca | [Per kelas](../../results/metrik_per_kelas.csv), [per cuaca](../../results/metrik_per_cuaca.csv) | Tersedia |
+| Confusion matrix dan contoh prediksi | Gambar di bawah | Tersedia |
+| Tahapan dan kasus gagal | [Tahapan metode](../../results/tahapan.png), [kasus gagal SVM](../../results/kasus_gagal_svm.png) | Tersedia |
+| Model HOG + SVM | [hog_svm.joblib](../../results/hog_svm.joblib) | Sudah dilatih |
+| Pembahasan evaluasi | [Laporan evaluasi](laporan_evaluasi.md) | Draf tersedia; pemeriksaan anggota masih berjalan |
+| Aplikasi demo | Target Marvin pada tabel tugas | Belum tersedia |
+
+### Confusion matrix
+
+![Confusion matrix enam skenario pada 144 observasi uji](../../results/confusion_matrix.png)
+
+### Contoh prediksi
+
+![Contoh prediksi HOG dan SVM pada empat petak](../../results/contoh_prediksi_svm.png)
+
 ## Pembagian tugas sampai 27 November
 
 Hasil pengujian awal sudah tersedia. Bagian berikut menjadi tanggung jawab pemeriksaan dan pengembangan tiap anggota.
