@@ -47,5 +47,7 @@ Foto PKLot berlisensi CC BY 4.0. Rincian atribusi dan perubahan format tersedia 
 
 ## Arsip progres mingguan
 
+- [Minggu 11, 9–13 November — perencanaan dan proposal](progres/minggu11/README.md)
+
 - [Minggu 12, 16–20 November — implementasi awal dan uji sintetis](progres/minggu12/README.md)
 - [Minggu 13, 25 November — evaluasi PKLot asli dan ablasi](Laporan_Progres_25_November.md)
