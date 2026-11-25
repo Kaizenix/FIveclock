@@ -56,7 +56,7 @@ Evaluasi memakai empat petak dari satu kamera dan hanya tiga tanggal uji. Foto y
 
 ## Status pekerjaan per 25 November
 
-Implementasi, pelatihan SVM, baseline, tiga ablasi, evaluasi 144 observasi data asli, ekspor CSV, dan visualisasi telah dijalankan. Kurasi awal jenis kendaraan dilakukan oleh asisten AI dan tercatat pada data/review_mobil.csv. Pemeriksaan ulang oleh Cikal masih menjadi tugas minggu ini melalui contact sheet dan foto sumber.
+Implementasi, pelatihan SVM, baseline, tiga ablasi, evaluasi 144 observasi data asli, ekspor CSV, dan visualisasi telah dijalankan. Kurasi awal jenis kendaraan tercatat pada data/review_mobil.csv. Pemeriksaan ulang oleh Cikal masih menjadi tugas minggu ini melalui contact sheet dan foto sumber.
 
 Kode dan hasil evaluasi sudah tersedia di repositori kelompok. Pembagian pekerjaan lanjutan tiap anggota dicatat pada [progres Minggu 13](README.md). Aplikasi demo akhir, laporan akhir, slide, dan video termasuk pekerjaan tahap berikutnya. Pemenuhan target metode klasik lengkap masih memerlukan pengembangan. Jika metode diperbaiki, evaluasi berikutnya memerlukan pemisahan pengujian baru atau pelabelan jelas sebagai iterasi setelah melihat hasil uji.
 
