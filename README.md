@@ -4,8 +4,6 @@ Repositori tugas besar Pengolahan Citra Digital, kelas RA, topik 2. Saya gunakan
 
 Proyek menentukan status kosong atau terisi pada empat petak parkir mobil dari citra statis PKLot UFPR04. Evaluasi data asli sudah berjalan. Pemeriksaan anggota dan aplikasi demo masih dikerjakan.
 
-## Mulai dari sini
-
 | Keperluan | File yang dipakai |
 |---|---|
 | Melihat tugas anggota dan target minggu ini | [Progres Minggu 13](progres/minggu13/README.md) |
