@@ -2,6 +2,8 @@
 
 Folder ini berisi keluaran pengujian data asli per **25 November 2026**. Raisya memeriksa tabel dan pembahasannya, Govin memeriksa mask serta tahapan, dan Marvin menggunakan model untuk aplikasi demo.
 
+File pada folder ini sudah tersimpan di GitHub. Untuk melihat hasil, buka tautan di bawah tanpa menjalankan notebook. Hasil demo sintetis Minggu 12 tersedia terpisah pada [folder hasil Minggu 12](../progres/minggu12/hasil/).
+
 ## File yang dibuka
 
 | Keperluan | File |

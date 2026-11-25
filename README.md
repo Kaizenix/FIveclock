@@ -15,6 +15,15 @@ Proyek menentukan status kosong atau terisi pada empat petak parkir mobil dari c
 
 **Untuk pengerjaan saat ini, gunakan notebook evaluasi di atas.** Notebook di folder Minggu 12 mencatat implementasi awal dengan data sintetis.
 
+## File hasil yang bisa langsung dibuka
+
+| Hasil | Gambar | Tabel |
+|---|---|---|
+| Minggu 12 — demo sintetis | [Tahapan dan prediksi](progres/minggu12/hasil/bukti_progres.png) | [Status empat petak](progres/minggu12/hasil/status_petak.csv) |
+| Minggu 13 — foto PKLot asli | [Prediksi pada foto asli](results/contoh_prediksi_svm.png), [confusion matrix](results/confusion_matrix.png), [tahapan](results/tahapan.png) | [Metrik enam skenario](results/metrik.csv), [144 prediksi petak](results/prediksi_uji.csv) |
+
+Berkas pada tabel sudah tersimpan di GitHub dan bisa dibuka tanpa menjalankan Colab. Saat notebook dijalankan ulang, keluaran barunya tersimpan di runtime; perubahan tersebut tidak otomatis masuk ke GitHub.
+
 ## Menjalankan pengujian
 
 ### Google Colab

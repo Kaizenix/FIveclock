@@ -28,8 +28,15 @@ Baseline salah membaca satu petak kosong, sedangkan metode lengkap salah membaca
 |---|---|---|
 | Alur implementasi awal | Kode pada notebook | Tersedia |
 | Prediksi empat petak sintetis | Keluaran teks pada notebook dan tabel di atas | Tersedia |
-| Visualisasi mask, PNG, dan CSV demo | Sel penyimpanan pada notebook | Dapat dibuat ulang dengan menjalankan notebook; belum disimpan sebagai file terpisah di repositori |
+| Visualisasi tahap pengolahan demo | [bukti_progres.png](hasil/bukti_progres.png) | Tersimpan di GitHub |
+| Tabel prediksi empat petak demo | [status_petak.csv](hasil/status_petak.csv) | Tersimpan di GitHub |
 | Evaluasi PKLot asli | [Hasil Minggu 13](../minggu13/README.md#bukti-hasil-minggu-ini) | Tersedia pada tahap berikutnya |
+
+### Gambar hasil implementasi
+
+![Tahapan pengolahan dan status empat petak pada demo sintetis Minggu 12](hasil/bukti_progres.png)
+
+PNG dan CSV di atas diekspor ulang pada 25 November 2026 dari notebook Minggu 12 dengan seed 42. Status dan rasio prediksinya cocok dengan keluaran teks yang sudah tersimpan. Data ini tetap berlabel **demo sintetis**. Untuk hasil foto parkir asli, buka [hasil Minggu 13](../minggu13/README.md#bukti-hasil-minggu-ini).
 
 ## Pembagian tugas
 

@@ -1,0 +1,5 @@
+sumber,petak,okupansi_xml,rasio_baseline_persen,prediksi_baseline,rasio_lengkap_persen,prediksi_lengkap
+DEMO SINTETIS,1,Terisi,68.99,Terisi mobil,97.23,Terisi mobil
+DEMO SINTETIS,2,Kosong,6.62,Kosong,94.72,Terisi mobil
+DEMO SINTETIS,3,Kosong,24.74,Terisi mobil,97.32,Terisi mobil
+DEMO SINTETIS,4,Terisi,33.08,Terisi mobil,93.98,Terisi mobil
